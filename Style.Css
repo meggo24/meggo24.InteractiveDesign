@@ -1,0 +1,855 @@
+/* Introduction Section */
+#introduction {
+  background-color: #f6bf0a;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+}
+
+/* White Sparkle Styling */
+#introduction .top-left-sparkle {
+  position: absolute; /* Position relative to the parent */
+  top: 15%; /* Top-left corner */
+  left: 7%; /* Left edge */
+  width: 100px; /* Adjust the size of the sparkle */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensures the sparkle appears on top */
+  scale: 200%;
+}
+
+/* Bottom-Right White Sparkle Styling */
+#introduction .bottom-right-sparkle {
+  position: absolute; /* Position relative to the parent */
+  bottom: 15%; /* Align similar to top */
+  right: 7%; /* Align similar to left */
+  width: 100px; /* Adjust the size of the sparkle */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 10; /* Ensures the sparkle appears on top */
+  scale: 200%;
+}
+
+/* Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.StartIntro {
+  font-size: 4.5em;
+  text-align: center;
+}
+
+/* Global Font Styles */
+body {
+  font-family: "DynaPuff", system-ui;
+}
+
+/*About Dynapuff*/
+.About {
+  font-size: 6em;
+  text-align: right;
+  color: #EE3B85;
+}
+
+
+/* Dynapuff Introduction */
+.dynaIntro {
+  color: #EE3B85;
+  font-size: 10em;
+  animation: float 3s ease-in-out infinite;
+  animation: fade-in 3s ease-in;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  text-align: center;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.Puffystyle1 {
+  font-size: 6em;
+  text-align: center;
+}
+
+/*Swirls n Twirls*/
+.YellowSwirlText {
+  font-size: 6em;
+  text-align: center;
+  color: rgb(246, 191, 10);
+  text-align: center; /* Center the text */
+  line-height: 6; /* Adds consistent spacing between lines */
+  margin: 0; /* Ensure no extra margin */
+  padding: 0; /* Ensure no extra padding */
+}
+
+.swirls .letter {
+  display: inline-block; /* Equal Letters */
+  animation: swirl-effect 1s ease-in-out forwards;
+  transform-origin: center center; /*Rotation Axis */
+}
+
+.swirls:hover .letter {
+  animation: swirl-effect 1s ease-in-out infinite;
+}
+
+@keyframes swirl-effect {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Twirl Effect Styling*/
+.twirls:hover {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Center the word Neon lights in the middle of the background */
+.Indigo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: indigo;
+  color: white;
+  text-align: center;
+}
+
+.showcase {
+  font-family: "DynaPuff";
+}
+
+.twirls {
+  display: inline-block; /* Necessary for rotation */
+  transition: transform 0.6s ease; /* Smooth Animation Hover */
+}
+
+.twirls:hover {
+  transform: rotate(360deg); /* 360 Rotation */
+}
+
+.BriefBio {
+  font-size: 9em;
+  text-align: center;
+  color: black;
+  margin-bottom: -50px;
+}
+
+
+.Puffystyle2 {
+  font-size: 3.5em;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: -50px;
+
+}
+
+.SheepQuote {
+  text-align: center;
+  color: #EE3B85;
+  font-size: 5em;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  margin: 0;
+  line-height: 5;
+}
+
+/* Green Background Section */
+.GreenBG {
+  background-color: hsl(96, 65%, 50%);
+  position: relative;
+  width: 100%;
+  height: 750px; /* Full height */
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text inside the h2 */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Styling for the Quote */
+.SheepQuote {
+  font-size: 5rem; /* Adjust font size */
+  color: #EE3B85; /* White text color for contrast */
+  margin: 0; /* Add slight spacing */
+}
+
+/* Styling for Morty's Name */
+.Morty {
+  font-size: 3.5rem; /* Slightly smaller font */
+    text-align: center;
+    height: 50%;
+    color: #EE3B85;
+  margin: 0;
+}
+
+
+/* Navigation Section (Sky) */
+.Sky {
+  background: hsl(193, 100%, 70%);
+  height: 750px;
+  width: 100%;
+  margin-top: 0%;
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensure text is centered */
+  position: relative; /* Allows the child (SunshineImage) to position relative to this */
+  top: -20px; /* Moves the entire content up by 20px */
+}
+
+/* Sunshine Image Styling */
+.SunshineImage {
+  position: absolute; /* Allows precise positioning relative to the parent (.Sky) */
+  top: 100%; /* Position the sun 10% from the top of the container (adjust as needed) */
+  left: 80%; /* Position the sun 5% from the right edge of the container */
+  z-index: 10; /* Ensures the sun stays on top of other elements */
+  scale: 105%; /* Scale down the sun to 30% of its original size */
+}
+
+.Clouds {
+  position: absolute; /* Allows precise positioning relative to .Sky */
+  top: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  width: 150px; /* Adjust size (you can change this to fit your design) */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensures the clouds stay behind other content */
+  scale: 145%;
+}
+
+.Puffystyle1, .Puffystyle2 {
+  margin: 0; /* Reset any extra margin */
+  padding: 0; /* Reset any extra padding */
+}
+
+.RainbowText {
+  margin-bottom: -10px; /* Reduces space below the Rainbow Text */
+}
+
+/*WOW What an amazing font!!! X3*/
+.Puffystyle2 {
+  position: relative;
+  top: 50px; 
+  font-weight: lighter;
+}
+
+/*Bubbly Bounce Effect*/
+.bubbly-effect {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff; /*White */
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Bouncing effect */
+.bubbly-effect:hover {
+  animation: bounce 0.6s ease-in-out infinite;
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+}
+
+/* Initial style for the "puffy" word */
+.puff-effect {
+  font-size: 1.5rem;
+  font-weight: 400; /* Normal font weight */
+  color: #ff4500; /* Orange-red */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+  cursor: pointer;
+}
+
+/* Initial style for the "puffy" word */
+.swell-effect {
+  font-size: 3.5rem;
+  font-weight: 400; /* Normal font weight */
+  color: #ffffff; /* Tomato red */
+  display: inline-block;
+  transition: transform 0.5s ease, font-weight 0.5s ease;
+  cursor: pointer;
+}
+
+/* Hover style: gradual swell effect */
+.swell-effect:hover {
+  animation: swell 1.5s ease-in-out infinite;
+  font-weight: 600; /* Slightly bolder to enhance the swelling effect */
+}
+
+/* Keyframes for the swell animation */
+@keyframes swell {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.15); /* Slight swelling effect */
+  }
+}
+
+.YellowBG, .SkyBlueBG {
+  margin: 0;
+  padding: 0;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual Letter Colors */
+.red, .orange, .yellow, .green, .blue, .indigo, .violet, .exclamation {
+  color: white; /* Start with white color */
+  transition: color 0.5s ease, transform 0.5s ease, letter-spacing 0.5s ease; /* Smooth color, size, and letter-spacing change */
+}
+
+.rainbow {
+  display: inline-block; /* Ensure scaling works properly */
+  transition: transform 0.5s ease, letter-spacing 0.5s ease; /* Smooth scaling and letter-spacing change */
+  letter-spacing: -0.1em;
+}
+
+.rainbow:hover {
+  transform: scale(5.75); /* Scale up the entire text */
+  letter-spacing: -0.1em; /* Adjust kerning when hovered */
+}
+
+.rainbow:hover .red {
+  color: hsl(355, 100%, 59%); /* Red */
+}
+
+.rainbow:hover .orange {
+  color: hsl(24, 100%, 60%); /* Orange */
+}
+
+.rainbow:hover .yellow {
+  color: hsl(43, 100%, 59%); /* Yellow */
+}
+
+.rainbow:hover .green {
+  color: hsl(96, 65%, 50%); /* Green */
+}
+
+.rainbow:hover .blue {
+  color: #0eb8e7; /* Blue */
+}
+
+.rainbow:hover .indigo {
+  color: #413292; /* Indigo */
+}
+
+.rainbow:hover .violet {
+  color: #9656A3; /* Violet */
+}
+
+.rainbow:hover .exclamation {
+  color: #EE3B85; /* Pink */
+}
+
+
+
+/* Reset default margins and padding for Swirls subsection*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Purple Section */
+.purpleBG {
+  background: rgb(194, 122, 253);
+  height: 600px;
+  width: 100%;
+}
+
+/* Flexbox container for alignment */
+.swirl-container {
+  display: flex;
+  align-items: center; /* Center swirls and text vertically */
+  justify-content: center; /* Center container horizontally */
+  gap: 10px; /* Space between text and images */
+}
+
+/* Swirl wrapper for easier positioning */
+.swirl-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  size: 8em 
+}
+
+/* Aligning text within its container */
+.swirl-text {
+  text-align: center;
+}
+
+/* Swirl image styling */
+.swirl-image {
+  transform-origin: center; /* Rotates around the center */
+  animation: spin; /* No animation by default */
+  display: block; /* Ensures proper alignment */
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.GreenBG, .purple {
+  margin: 0;
+  padding: 0;
+}
+
+.GreenBG {
+  height: 750px;
+}
+
+.purple {
+  height: 750px;
+}
+
+
+/*Magenta Section*/
+.magentapink {
+  background:#EE3B85;
+  height: 750px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.textmagenta {
+  text-align: center;
+  font-size: 8em;
+}
+
+.Indigo {
+  background-color: #413292; /* Indigo background */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.showcase {
+  text-align: center; /* Center the text alignment */
+  font-size: 2em;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.weight-medium,
+.weight-semibold,
+.weight-bold {
+  font-weight: 400; /* Initial font weight */
+  transition: font-weight 0.3s ease; /* Smooth transition */
+}
+
+.weight-medium:hover {
+  font-weight: 500;
+}
+
+.weight-semibold:hover {
+  font-weight: 600;
+}
+
+.weight-bold:hover {
+  font-weight: 700;
+}
+
+
+/* Medium Text */
+.dynaMedium {
+  font-family: "DynaPuff", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.font-variation h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+.weight-medium {
+  font-weight: 400; /* Regular font weight for Medium */
+  transition: font-weight 0.3s ease; /* Smooth transition to bold */
+  color: #ffffff;
+}
+
+.weight-medium:hover {
+  font-weight: 500; /* Bold to Medium's actual weight */
+  color: #ffffff;
+}
+
+.weight-semibold {
+  font-weight: 500; /* Regular font weight for SemiBold */
+  transition: font-weight 0.3s ease;
+  color: #ffffff;
+}
+
+.weight-semibold:hover {
+  font-weight: 600; /* Bold to SemiBold's actual weight */
+}
+
+.weight-bold {
+  font-weight: 600; /* Regular font weight for Bold */
+  transition: font-weight 0.3s ease;
+  color: #ffffff;
+}
+
+.weight-bold:hover {
+  font-weight: 700; /* Bold to Bold's actual weight */
+}
+
+/* Rainbow Text Styling */
+.RainbowText {
+  font-size: 6em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 50px;
+}
+
+/* Magenta Section */
+.NewSection {
+  background: #EE3B85;
+  height: 700px;
+  width: 100%;
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*Alphabet Showcase*/
+.alphatitle {
+  color: hsl(43, 100%, 49%);
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5; /* Adjusted for better spacing */
+  font-weight: 600;
+}
+
+/* Alphabet Text Styling */
+.alphabettext {
+  color: hsl(43, 100%, 49%);
+  font-size: 4.5em;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Alphabet Container */
+.NewSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stair Step Container */
+.stair-step-effect {
+  font-family: "DynaPuff", system-ui;
+  font-size: 7em;
+  font-weight: 500;
+  color: hsl(43, 100%, 49%);
+  display: inline-block;
+}
+
+/* Individual Letters */
+.stair-step-effect span {
+  display: inline-block;
+  animation: jump 1s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 0.2s);
+  --index: 0;
+}
+
+/* Assigning Index to Each Letter */
+.stair-step-effect span:nth-child(1) { --index: 0; }
+.stair-step-effect span:nth-child(2) { --index: 1; }
+.stair-step-effect span:nth-child(3) { --index: 2; }
+.stair-step-effect span:nth-child(4) { --index: 3; }
+.stair-step-effect span:nth-child(5) { --index: 4; }
+.stair-step-effect span:nth-child(6) { --index: 5; }
+.stair-step-effect span:nth-child(7) { --index: 6; }
+.stair-step-effect span:nth-child(8) { --index: 7; }
+
+/* Jump Animation */
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/* Ensure sections span full width */
+.YellowBG, .SkyBlueBG, .GreenBG, .purple, .magentapink, .Indigo {
+  width: 100%;
+}
+
+/* Use the border-box model globally */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
+
+/*Neon Signs WOWZERZZZ*/
+/* Introduction Section */
+#introduction {
+  background-color: #f6bf0a;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+}
+
+/* Global Styles */
+body {
+  font-family: "DynaPuff", system-ui;
+}
+
+/* Neon Signs Container */
+/* Night Sky Background */
+.BlackBG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #0d1326;
+  width: 100%;
+  position: relative; /* Allows stars to position absolutely within this container */
+  overflow: hidden;
+}
+
+/* White Star Styling */
+.WhiteStar {
+  position: absolute; /* Allows precise placement */
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transform-origin: center; /* Ensure centered transformations */
+  z-index: 2; /* Keep stars above the background */
+  scale: 250%;
+}
+
+/* Top-Left Star */
+.WhiteStar.top-left {
+  top: 10%; /* Position star near the top edge */
+  left: 5%; /* Position star near the left edge */
+}
+
+/* Bottom-Right Star */
+.WhiteStar.bottom-right {
+  bottom: 10%; /* Position star near the bottom edge */
+  right: 5%; /* Position star near the right edge */
+}
+
+/* Neon Text Styling */
+.neon-text {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  gap: 5px; /* Spacing between letters */
+}
+
+
+
+/* Neon Text Effect */
+.neon-text {
+  font-size: 4em;
+  color: white;
+  text-shadow: 
+    0 0 5px #ffffff80,
+    0 0 10px #ffffff80,
+    0 0 20px #ffffff80,
+    0 0 30px #ff69b4cc, 
+    0 0 40px #ff69b4b3,
+    0 0 50px #ff69b499;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 
+    0 0 5px #ffffff80,
+    0 0 10px #ffffff80,
+    0 0 20px #ffffff80,
+    0 0 30px #ff69b4cc, 
+    0 0 40px #ff69b4b3,
+    0 0 50px #ff69b499;
+  }
+  100% {
+    text-shadow: 
+    0 0 5px #ffffff80,
+    0 0 10px #ffffff80,
+    0 0 20px #ffffff80,
+    0 0 30px #ff69b4cc, 
+    0 0 40px #ff69b4b3,
+    0 0 50px #ff69b499;
+  }
+}
+
+/* Rainbow Text Animation */
+.rainbow {
+  display: inline-block; 
+  transition: transform 0.5s ease, letter-spacing 0.5s ease; 
+  letter-spacing: -0.1em;
+}
+
+.rainbow:hover {
+  transform: scale(1.75); 
+  letter-spacing: -0.1em; 
+}
+
+.rainbow:hover .letter {
+  animation: rainbow-animation 1s infinite alternate;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    color: #ff2e3f;
+  }
+  14% {
+    color: #ff8533;
+  }
+  28% {
+    color: #ffc42e;
+  }
+  42% {
+    color: rgb(111, 210, 45);
+  }
+  57% {
+    color: #0eb8e7;
+  }
+  71% {
+    color: #413292;
+  }
+  85% {
+    color: #9656A3;
+  }
+  100% {
+    color: #EE3B85;
+  }
+}
+
+/* Individual Stars */
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "DynaPuff", system-ui;
+  background-color: #ffffff; /* Default body background */
+}
+
+/* Starry Section */
+.starry-sky {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-color: #0d1326; /* Dark blue background */
+  overflow: hidden;
+}
+
+/*Cherry Section*/
+.OrangeBG {
+background: hsl(30, 100%, 60%);
+  height: 700px;
+  width: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*Credits Title*/
+.CreditsTitle{
+color: floralwhite;
+text-align: center;
+justify-content: center;
+align-items: center;
+position: relative;
+font-size: 3em;
+}
+
+.credits text{
+  color: white;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  position: relative;
+  font-size: 2em;
+}
